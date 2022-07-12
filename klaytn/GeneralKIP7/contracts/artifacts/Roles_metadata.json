@@ -1,0 +1,38 @@
+{
+	"compiler": {
+		"version": "0.5.6+commit.b259423e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Library for managing addresses assigned to a Role.",
+			"methods": {},
+			"title": "Roles"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GeneralKIP7.sol": "Roles"
+		},
+		"evmVersion": "constantinople",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/GeneralKIP7.sol": {
+			"keccak256": "0x54ffa0d7b27f43a6260f8c2fa817957da821364781bb0b77e6fbc1043e2d9470",
+			"urls": [
+				"bzzr://822fdd9d29532286eb876194a12fc81fdff005fdde959a40404d1df56699c66d"
+			]
+		}
+	},
+	"version": 1
+}

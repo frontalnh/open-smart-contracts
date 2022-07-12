@@ -1,0 +1,66 @@
+{
+	"deploy": {
+		"cypress:8217": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"baobab:1001": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582076587cca977d747c15a84afba09edfc5cf4cd71336e77fd0fc3f5eeb762c08820029",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x35 DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 PUSH23 0x587CCA977D747C15A84AFBA09EDFC5CF4CD71336E77FD0 0xfc EXTCODEHASH 0x5e 0xeb PUSH23 0x2C08820029000000000000000000000000000000000000 ",
+			"sourceMap": "64021:1334:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;64021:1334:1;;;;;;;"
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "6080604052600080fdfea165627a7a7230582076587cca977d747c15a84afba09edfc5cf4cd71336e77fd0fc3f5eeb762c08820029",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 PUSH23 0x587CCA977D747C15A84AFBA09EDFC5CF4CD71336E77FD0 0xfc EXTCODEHASH 0x5e 0xeb PUSH23 0x2C08820029000000000000000000000000000000000000 ",
+			"sourceMap": "64021:1334:1:-;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "10600",
+				"executionCost": "66",
+				"totalCost": "10666"
+			},
+			"internal": {
+				"_isConstructor()": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": []
+}

@@ -1,0 +1,202 @@
+{
+	"compiler": {
+		"version": "0.5.6+commit.b259423e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newImplementation",
+						"type": "address"
+					}
+				],
+				"name": "upgradeTo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newImplementation",
+						"type": "address"
+					},
+					{
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "upgradeToAndCall",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "implementation",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newAdmin",
+						"type": "address"
+					}
+				],
+				"name": "changeAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_logic",
+						"type": "address"
+					},
+					{
+						"name": "_admin",
+						"type": "address"
+					},
+					{
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "previousAdmin",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "newAdmin",
+						"type": "address"
+					}
+				],
+				"name": "AdminChanged",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "implementation",
+						"type": "address"
+					}
+				],
+				"name": "Upgraded",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"details": "This contract implements a proxy that is upgradeable by an admin. * To avoid https://medium.com/nomic-labs-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357[proxy selector clashing], which can potentially be used in an attack, this contract uses the https://blog.openzeppelin.com/the-transparent-proxy-pattern/[transparent proxy pattern]. This pattern implies two things that go hand in hand: * 1. If any account other than the admin calls the proxy, the call will be forwarded to the implementation, even if that call matches one of the admin functions exposed by the proxy itself. 2. If the admin calls the proxy, it can access the admin functions, but its calls will never be forwarded to the implementation. If the admin tries to call a function on the implementation it will fail with an error that says \"admin cannot fallback to proxy target\". * These properties mean that the admin account can only be used for admin actions like upgrading the proxy or changing the admin, so it's best if it's a dedicated account that is not used for anything else. This will avoid headaches due to sudden errors when trying to call a function from the proxy implementation. * Our recommendation is for the dedicated account to be an instance of the {ProxyAdmin} contract. If set up this way, you should think of the `ProxyAdmin` instance as the real administrative inerface of your proxy.",
+			"methods": {
+				"admin()": {
+					"details": "Returns the current admin.   * NOTE: Only the admin can call this function. See {ProxyAdmin-getProxyAdmin}.   * TIP: To get this value clients can read directly from the storage slot shown below (specified by EIP1967) using the https://eth.wiki/json-rpc/API#eth_getstorageat[`eth_getStorageAt`] RPC call. `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103`"
+				},
+				"changeAdmin(address)": {
+					"details": "Changes the admin of the proxy.   * Emits an {AdminChanged} event.   * NOTE: Only the admin can call this function. See {ProxyAdmin-changeProxyAdmin}."
+				},
+				"constructor": {
+					"details": "Initializes an upgradeable proxy managed by `_admin`, backed by the implementation at `_logic`, and optionally initialized with `_data` as explained in {UpgradeableProxy-constructor}."
+				},
+				"implementation()": {
+					"details": "Returns the current implementation.   * NOTE: Only the admin can call this function. See {ProxyAdmin-getProxyImplementation}.   * TIP: To get this value clients can read directly from the storage slot shown below (specified by EIP1967) using the https://eth.wiki/json-rpc/API#eth_getstorageat[`eth_getStorageAt`] RPC call. `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`"
+				},
+				"upgradeTo(address)": {
+					"details": "Upgrade the implementation of the proxy.   * NOTE: Only the admin can call this function. See {ProxyAdmin-upgrade}."
+				},
+				"upgradeToAndCall(address,bytes)": {
+					"details": "Upgrade the implementation of the proxy, and then call a function from the new implementation as specified by `data`, which should be an encoded function call. This is useful to initialize new storage variables in the proxied contract.   * NOTE: Only the admin can call this function. See {ProxyAdmin-upgradeAndCall}."
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GeneralKIP17Proxy.sol": "TransparentUpgradeableProxy"
+		},
+		"evmVersion": "constantinople",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Address.sol": {
+			"keccak256": "0x823cd3a29dd4f710e9350f8e569f4db5bcd25a32257b7586c2603b5c205f1d76",
+			"urls": [
+				"bzzr://16eb37aaae6ccbccbadb24cc0722fcd69f45705d34ac439ec627327376d6ac09"
+			]
+		},
+		"contracts/GeneralKIP17Proxy.sol": {
+			"keccak256": "0x5e33e5f7e9013e7afc8b38cc3ed600c01857c6d94a56db168033d950b2ce7a92",
+			"urls": [
+				"bzzr://b20673d02710f47e4e59d81dd34c1c735a9ff13211b6236ac34456fc2e6dd130"
+			]
+		},
+		"contracts/Proxy.sol": {
+			"keccak256": "0x884da6e51d3137baf3e6f6bf41ed5b0c9938c010795222ba0d12fae0ba39e69c",
+			"urls": [
+				"bzzr://a2d681f83963a155a84c5e1542117e8d68d63f9c44436b5ebdd4efeec121dda0"
+			]
+		},
+		"contracts/UpgradeableProxy.sol": {
+			"keccak256": "0xe69818aabbca330b42838a95c139f724153d96945afd97129e1957ac72580e49",
+			"urls": [
+				"bzzr://b84555dc61db2b41c32033f56db64e8590844dc894f1a8b485e1b8eb89bd0cfc"
+			]
+		}
+	},
+	"version": 1
+}

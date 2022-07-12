@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.0",
+    "@openzeppelin/contracts-upgradeable": "^4.7.0",
+    "multi-token-standard": "^2.2.2"
+  },
+  "devDependencies": {
+    "prettier-plugin-solidity": "^1.0.0-beta.19"
+  }
+}

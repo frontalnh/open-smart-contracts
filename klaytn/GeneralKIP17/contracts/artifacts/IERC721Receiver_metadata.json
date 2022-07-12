@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.5.6+commit.b259423e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface for any contract that wants to support safeTransfers from ERC721 asset contracts.",
+			"methods": {
+				"onERC721Received(address,address,uint256,bytes)": {
+					"details": "The ERC721 smart contract calls this function on the recipient after a `safeTransfer`. This function MUST return the function selector, otherwise the caller will revert the transaction. The selector to be returned can be obtained as `this.onERC721Received.selector`. This function MAY throw to revert and reject the transfer. Note: the ERC721 contract address is always the message sender.",
+					"params": {
+						"data": "Additional data with no specified format",
+						"from": "The address which previously owned the token",
+						"operator": "The address which called `safeTransferFrom` function",
+						"tokenId": "The NFT identifier which is being transferred"
+					},
+					"return": "bytes4 `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`"
+				}
+			},
+			"title": "ERC721 token receiver interface"
+		},
+		"userdoc": {
+			"methods": {
+				"onERC721Received(address,address,uint256,bytes)": {
+					"notice": "Handle the receipt of an NFT"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GeneralKIP17V1.sol": "IERC721Receiver"
+		},
+		"evmVersion": "constantinople",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Address.sol": {
+			"keccak256": "0x823cd3a29dd4f710e9350f8e569f4db5bcd25a32257b7586c2603b5c205f1d76",
+			"urls": [
+				"bzzr://16eb37aaae6ccbccbadb24cc0722fcd69f45705d34ac439ec627327376d6ac09"
+			]
+		},
+		"contracts/GeneralKIP17V1.sol": {
+			"keccak256": "0x7b67f82deb6589d921eadf6257d60fa74da3c3fe4ee96c1f11653f5ba2a44a9d",
+			"urls": [
+				"bzzr://95201c79db0c7fe72d6ca269f6b81a3a4f4a373eb80d1f5c097e2e2ee2cd0507"
+			]
+		},
+		"contracts/IKIP13.sol": {
+			"keccak256": "0x27000442440fd6a77011e12b9e5c42ea20b876403b9eeff31fd78c23aa6cf081",
+			"urls": [
+				"bzzr://63116b83144bc14bcc89ec784e580a19508b16d166466b67110498a9ce169299"
+			]
+		},
+		"contracts/IKIP17.sol": {
+			"keccak256": "0x3054f0fdc51ea774b6a4c074e1330691d1051bc4a88ffc1b6c2c275d91a9d0fd",
+			"urls": [
+				"bzzr://e97a3b400af9e9ef239166069e21d0dc91476dfd6de4e0514823855b81c4021d"
+			]
+		}
+	},
+	"version": 1
+}

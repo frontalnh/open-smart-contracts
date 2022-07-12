@@ -1,0 +1,57 @@
+{
+	"compiler": {
+		"version": "0.5.6+commit.b259423e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "Matt Condon (@shrugs)",
+			"details": "Provides counters that can only be incremented or decremented by one. This can be used e.g. to track the number of elements in a mapping, issuing ERC721 ids, or counting request ids. * Include with `using Counters for Counters.Counter;` Since it is not possible to overflow a 256 bit integer with increments of one, `increment` can skip the SafeMath overflow check, thereby saving gas. This does assume however correct usage, in that the underlying `_value` is never directly accessed.",
+			"methods": {},
+			"title": "Counters"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GeneralKIP17V1.sol": "Counters"
+		},
+		"evmVersion": "constantinople",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Address.sol": {
+			"keccak256": "0x823cd3a29dd4f710e9350f8e569f4db5bcd25a32257b7586c2603b5c205f1d76",
+			"urls": [
+				"bzzr://16eb37aaae6ccbccbadb24cc0722fcd69f45705d34ac439ec627327376d6ac09"
+			]
+		},
+		"contracts/GeneralKIP17V1.sol": {
+			"keccak256": "0x7b67f82deb6589d921eadf6257d60fa74da3c3fe4ee96c1f11653f5ba2a44a9d",
+			"urls": [
+				"bzzr://95201c79db0c7fe72d6ca269f6b81a3a4f4a373eb80d1f5c097e2e2ee2cd0507"
+			]
+		},
+		"contracts/IKIP13.sol": {
+			"keccak256": "0x27000442440fd6a77011e12b9e5c42ea20b876403b9eeff31fd78c23aa6cf081",
+			"urls": [
+				"bzzr://63116b83144bc14bcc89ec784e580a19508b16d166466b67110498a9ce169299"
+			]
+		},
+		"contracts/IKIP17.sol": {
+			"keccak256": "0x3054f0fdc51ea774b6a4c074e1330691d1051bc4a88ffc1b6c2c275d91a9d0fd",
+			"urls": [
+				"bzzr://e97a3b400af9e9ef239166069e21d0dc91476dfd6de4e0514823855b81c4021d"
+			]
+		}
+	},
+	"version": 1
+}
