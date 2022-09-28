@@ -1846,7 +1846,7 @@ contract GeneralKIP17V1 is Initializable, OwnableUpgradeable, KIP17TokenAUpgrade
 
     string memory baseURI = _baseURI();
 
-    return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, tokenId.toString())) : "";
+    return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, tokenId.toString(), ".json")) : "";
   }
 
   function withdrawMoney() external onlyOwner nonReentrant {
