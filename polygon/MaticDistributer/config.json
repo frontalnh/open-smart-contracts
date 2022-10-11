@@ -1,0 +1,7 @@
+{
+  "deployed": {
+    "polygon_infura_testnet": {
+      "MaticDistributer": "0x9b579a3f09fe5052A418271519e708FEbcb24534"
+    }
+  }
+}
