@@ -1,0 +1,9 @@
+{
+  "deployed": {
+    "polygon_infura_testnet": {
+      "ProxyAdmin": "0xC0401c8f978E7122b1E3167C930936a73baEC83f",
+      "GeneralERC20V1": "0x80f3734f447ea8dB88d22644eb2a356BfB7178d3",
+      "GeneralERC20Proxy": "0x56Eb93a70A26aCF28F8E05b033E810b54d2F5D99"
+    }
+  }
+}
