@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.5.6+commit.b259423e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface of the KIP-13 standard, as defined in the [KIP-13](http://kips.klaytn.com/KIPs/kip-13-interface_query_standard). * Implementers can declare support of contract interfaces, which can then be queried by others. * For an implementation, see `KIP13`.",
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding [KIP-13 section](http://kips.klaytn.com/KIPs/kip-13-interface_query_standard#how-interface-identifiers-are-defined) to learn more about how these ids are created.   * This function call must use less than 30 000 gas."
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"IKIP13.sol": "IKIP13"
+		},
+		"evmVersion": "constantinople",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"IKIP13.sol": {
+			"keccak256": "0x27000442440fd6a77011e12b9e5c42ea20b876403b9eeff31fd78c23aa6cf081",
+			"urls": [
+				"bzzr://63116b83144bc14bcc89ec784e580a19508b16d166466b67110498a9ce169299"
+			]
+		}
+	},
+	"version": 1
+}

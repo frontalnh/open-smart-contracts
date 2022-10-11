@@ -1,0 +1,99 @@
+{
+	"compiler": {
+		"version": "0.5.6+commit.b259423e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "contractAddress",
+						"type": "address"
+					},
+					{
+						"name": "addresses",
+						"type": "address[]"
+					},
+					{
+						"name": "amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "distributeKIP7",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "contractAddress",
+						"type": "address"
+					},
+					{
+						"name": "addresses",
+						"type": "address[]"
+					},
+					{
+						"name": "tokenIds",
+						"type": "uint256[]"
+					}
+				],
+				"name": "distributeKIP17",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TokenDistributer.sol": "TokenDistributer"
+		},
+		"evmVersion": "constantinople",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"IKIP13.sol": {
+			"keccak256": "0x27000442440fd6a77011e12b9e5c42ea20b876403b9eeff31fd78c23aa6cf081",
+			"urls": [
+				"bzzr://63116b83144bc14bcc89ec784e580a19508b16d166466b67110498a9ce169299"
+			]
+		},
+		"IKIP17.sol": {
+			"keccak256": "0x3054f0fdc51ea774b6a4c074e1330691d1051bc4a88ffc1b6c2c275d91a9d0fd",
+			"urls": [
+				"bzzr://e97a3b400af9e9ef239166069e21d0dc91476dfd6de4e0514823855b81c4021d"
+			]
+		},
+		"IKIP7.sol": {
+			"keccak256": "0xfbfee6585e56b951b845726e3de4dd626bb448073a89dac64c454f03fedcf252",
+			"urls": [
+				"bzzr://6d552e442b4a71dd510db42fe6c08728a7de6becf997bf6caa38d070c0299d53"
+			]
+		},
+		"TokenDistributer.sol": {
+			"keccak256": "0x681cac86282486e35aefa9ece954cefe2ec997f61bc93c95034c7a40d164432e",
+			"urls": [
+				"bzzr://2670d32fd4a97b9d24782a3c1bdf757b089106e1f47700907055f386958ae43d"
+			]
+		}
+	},
+	"version": 1
+}
