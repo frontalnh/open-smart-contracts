@@ -1,1 +1,10 @@
-{}
+{
+  "deployed": {
+    "goerli-fork": {
+      "TokenDistributer": "0x9b579a3f09fe5052A418271519e708FEbcb24534"
+    },
+    "goerli": {
+      "TokenDistributer": "0x9b579a3f09fe5052A418271519e708FEbcb24534"
+    }
+  }
+}
