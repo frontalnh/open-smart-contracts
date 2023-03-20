@@ -1,1 +1,9 @@
-{}
+{
+  "deployed": {
+    "goerli_infura_testnet": {
+      "ProxyAdmin": "0xB46f05b1ceA44132Bdff87eDad95Ab737a70B782",
+      "GeneralERC20V1": "0x0dBa874D19c5bb136C8bA3ABe9b69B659Ee34bAe",
+      "GeneralERC20Proxy": "0x4cbe5e65D0492c1992bdfdEFe591Bb3f8eE4f8B7"
+    }
+  }
+}

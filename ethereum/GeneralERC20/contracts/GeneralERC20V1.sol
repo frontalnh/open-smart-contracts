@@ -7,7 +7,6 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20Burnable
 import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
-import "./RevealableUpgradeable.sol";
 
 contract GeneralERC20V1 is Initializable, OwnableUpgradeable, ReentrancyGuardUpgradeable, ERC20Upgradeable, ERC20BurnableUpgradeable {
   function initialize(

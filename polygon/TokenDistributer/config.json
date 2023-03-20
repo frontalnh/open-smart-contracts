@@ -1,0 +1,7 @@
+{
+  "deployed": {
+    "polygon_infura_testnet": {
+      "TokenDistributer": "0x266dcd6325008e990A976E09E4932d4D123De496"
+    }
+  }
+}

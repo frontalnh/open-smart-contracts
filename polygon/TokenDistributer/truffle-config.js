@@ -3,8 +3,8 @@ const HDWalletProvider = require("@truffle/hdwallet-provider");
 // like the mnemomic and Infura project key below. Note: .env is ignored by git to keep your private information safe
 require("dotenv").config();
 
-const WALLET_PK = "";
-const INFURA_KEY = ""; // namhoon test
+const { ETHEREUM_TEST_WALLET_PK, INFURA_KEY } = process.env;
+const WALLET_PK = ETHEREUM_TEST_WALLET_PK;
 
 module.exports = {
   networks: {
@@ -13,24 +13,23 @@ module.exports = {
       port: 8545, // Standard Ethereum port (default: none)
       network_id: "*", // Any network (default: none)
     },
-    //goerli Infura mainnet
-    goerli_infura_mainnet: {
-      provider: () => new HDWalletProvider(WALLET_PK, "https://mainnet.infura.io/v3/" + INFURA_KEY),
-      network_id: 1,
+    //polygon Infura mainnet
+    polygon_infura_mainnet: {
+      provider: () => new HDWalletProvider(WALLET_PK, "https://polygon-mainnet.infura.io/v3/" + INFURA_KEY),
+      network_id: 137,
       confirmations: 2,
       timeoutBlocks: 200,
-      gasPrice: 120000000000,
       skipDryRun: true,
-      chainId: 1,
+      chainId: 137,
     },
-    //goerli Infura testnet
-    goerli_infura_testnet: {
-      provider: () => new HDWalletProvider(WALLET_PK, "https://goerli.infura.io/v3/" + INFURA_KEY),
-      network_id: 5,
+    //polygon Infura testnet
+    polygon_infura_testnet: {
+      provider: () => new HDWalletProvider(WALLET_PK, "https://polygon-mumbai.infura.io/v3/" + INFURA_KEY),
+      network_id: 80001,
       confirmations: 1,
       timeoutBlocks: 200,
       skipDryRun: true,
-      chainId: 5,
+      chainId: 80001,
     },
   },
 
