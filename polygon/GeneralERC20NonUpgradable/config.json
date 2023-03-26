@@ -1,0 +1,7 @@
+{
+  "deployed": {
+    "polygon_infura_testnet": {
+      "GeneralERC20NonUpgradable": "0xd4Dbd8fc8dF80C14C74De25714941693ed7afE2b"
+    }
+  }
+}
